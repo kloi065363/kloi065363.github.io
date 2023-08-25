@@ -13,6 +13,7 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { Divider } from '@mui/material';
 
 const theme = createTheme({
   palette: {
@@ -29,12 +30,12 @@ const theme = createTheme({
   },
 });
 
-
 function Root () {
   return (
     <>
       <NavBar/>
       <Toolbar/>
+      <Divider/>
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/home" element={<HomePage/>} />

@@ -2,8 +2,29 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  padding: auto;
 }
 
 .nav-button:hover {
-  color: #d1c4e9
+  color: #d1c4e9;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-small {
+    display: none;
+  }
+
+  .nav-big {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .nav-small {
+    display: flex;
+  }
+
+  .nav-big {
+    display: none;
+  }
 }

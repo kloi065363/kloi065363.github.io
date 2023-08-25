@@ -5,6 +5,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import NavCollapsedMenu from './NavCollapsedMenu';
 import {
   useNavigate,
 } from 'react-router-dom';
@@ -23,9 +24,9 @@ function NavBar () {
     <Box component="nav">
       <AppBar position="fixed" elevation={0} color="transparent" background-color="transparent">
         <Toolbar>
-          <div class="nav-bar">
+          <div class="nav-bar nav-big">
             <Typography variant="h6" color="white">
-              &nbsp;Kelly's Corner of the Internet
+              Kelly's Corner of the Internet
             </Typography>
             <div>
               <StyledButton variant='text' color='primary' onClick={() => { navigate('/home'); }}>Home</StyledButton>
@@ -33,6 +34,12 @@ function NavBar () {
               <StyledButton variant='text' color='primary' onClick={() => { navigate('/about'); }}>About</StyledButton>
               <StyledButton variant='text' color='primary' onClick={() => { navigate('/contact'); }}>Contact</StyledButton>
             </div>
+          </div>
+          <div class="nav-bar nav-small">
+            <Typography variant="h6" color="white">
+              Kelly's Corner
+            </Typography>
+            <NavCollapsedMenu></NavCollapsedMenu>
           </div>
         </Toolbar>
       </AppBar>
