@@ -8,6 +8,13 @@ import Button from '@mui/material/Button';
 import {
   useNavigate,
 } from 'react-router-dom';
+import { styled } from '@mui/system';
+
+const StyledButton = styled(Button)(({}) => ({
+  ':hover': {
+    color: '#e1bee7',
+  },
+}));
 
 function NavBar () {
   const navigate = useNavigate();
@@ -16,9 +23,17 @@ function NavBar () {
     <Box component="nav">
       <AppBar position="fixed" elevation={0} color="transparent" background-color="transparent">
         <Toolbar>
-          <Typography variant="h6" color="primary">
-            Kelly's Corner of the Internet
-          </Typography>
+          <div class="nav-bar">
+            <Typography variant="h6" color="white">
+              &nbsp;Kelly's Corner of the Internet
+            </Typography>
+            <div>
+              <StyledButton variant='text' color='primary' onClick={() => { navigate('/home'); }}>Home</StyledButton>
+              <StyledButton variant='text' color='primary' onClick={() => { navigate('/projects'); }}>Projects</StyledButton>
+              <StyledButton variant='text' color='primary' onClick={() => { navigate('/about'); }}>About</StyledButton>
+              <StyledButton variant='text' color='primary' onClick={() => { navigate('/contact'); }}>Contact</StyledButton>
+            </div>
+          </div>
         </Toolbar>
       </AppBar>
     </Box>

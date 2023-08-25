@@ -1,0 +1,9 @@
+.nav-bar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button:hover {
+  color: #d1c4e9
+}

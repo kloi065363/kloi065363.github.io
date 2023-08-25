@@ -6,12 +6,12 @@ import {
   useNavigate,
 } from 'react-router-dom';
 
-function HomePage () {
+function ContactPage () {
   const navigate = useNavigate();
 
   return (
-    <>This is the home page</>
+    <>This is the contact page</>
   )
 }
 
-export default HomePage;
+export default ContactPage;
