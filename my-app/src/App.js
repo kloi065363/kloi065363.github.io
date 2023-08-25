@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
 import ProjectsPage from './components/ProjectsPage';
-import AboutPage from './components/ProjectsPage';
+import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import Toolbar from '@mui/material/Toolbar';
 import {
