@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 import { styled } from '@mui/system';
 
-const StyledButton = styled(Button)(({}) => ({
+const StyledButton = styled(Button)(() => ({
   ':hover': {
     color: '#e1bee7',
   },

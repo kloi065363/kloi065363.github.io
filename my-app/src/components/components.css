@@ -9,12 +9,69 @@
   color: #d1c4e9;
 }
 
+.contact-banner {
+  display:flex;
+  width: 100vw;
+  height: 30vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-banner-image {
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-banner-text {
+  z-index: 2;
+  position: absolute;
+  font-size: x-large;
+}
+
+.contact-block {
+  height: 30vh;
+  width: calc((100vw)/3);
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.contact-description {
+  align-items: center;
+  padding-top: 0px;
+}
+
+.contact-details, .work-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-footer {
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.contact-footer-image {
+  width: 100vw;
+  object-fit: contain;
+  object-position: bottom;
+}
+
 @media screen and (min-width: 800px) {
   .nav-small {
     display: none;
   }
 
   .nav-big {
+    display: flex;
+  }
+
+  .contact-info {
     display: flex;
   }
 }
@@ -26,5 +83,13 @@
 
   .nav-big {
     display: none;
+  }
+
+  .contact-info {
+    display: block;
+  }
+
+  .contact-block {
+    width: 100vw
   }
 }

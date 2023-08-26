@@ -1,4 +1,5 @@
 import React from 'react';
+import './components.css';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
@@ -8,7 +9,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import { useNavigate } from 'react-router-dom';
 import { styled } from '@mui/system';
 
-const StyledButton = styled(ListItemButton)(({}) => ({
+const StyledButton = styled(ListItemButton)(() => ({
   ':hover': {
     color: '#e1bee7',
   },
