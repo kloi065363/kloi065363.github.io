@@ -13,7 +13,7 @@ import { styled } from '@mui/system';
 
 const StyledButton = styled(Button)(() => ({
   ':hover': {
-    color: '#e1bee7',
+    color: '#d1c4e9',
   },
 }));
 
@@ -29,7 +29,7 @@ function NavBar () {
               Kelly's Corner of the Internet
             </Typography>
             <div>
-              <StyledButton variant='text' color='primary' onClick={() => { navigate('/home'); }}>Home</StyledButton>
+              <StyledButton variant='text' color='primary' onClick={() => { navigate('/'); }}>Home</StyledButton>
               <StyledButton variant='text' color='primary' onClick={() => { navigate('/projects'); }}>Projects</StyledButton>
               <StyledButton variant='text' color='primary' onClick={() => { navigate('/about'); }}>About</StyledButton>
               <StyledButton variant='text' color='primary' onClick={() => { navigate('/contact'); }}>Contact</StyledButton>
