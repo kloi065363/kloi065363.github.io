@@ -9,7 +9,7 @@
   color: #d1c4e9;
 }
 
-.contact-banner {
+.contact-banner, .about-banner {
   display:flex;
   width: 100vw;
   height: 30vh;
@@ -17,7 +17,7 @@
   justify-content: space-around;
 }
 
-.contact-banner-image {
+.contact-banner-image, .about-banner-image {
   width: 100vw;
   height: 30vh;
   object-fit: cover;
@@ -25,7 +25,7 @@
   z-index: 1;
 }
 
-.contact-banner-text {
+.contact-banner-text, .about-banner-text {
   z-index: 2;
   position: absolute;
   font-size: x-large;
@@ -50,16 +50,24 @@
   text-align: center;
 }
 
-.contact-footer {
+.footer {
   width: 100vw;
   height: 30vh;
   overflow: hidden;
 }
 
-.contact-footer-image {
+.footer-image {
   width: 100vw;
   object-fit: contain;
   object-position: bottom;
+}
+
+.section-container {
+  width: 100vw;
+}
+
+.section-container:nth-child(even) {
+  background-color: #342B45;
 }
 
 @media screen and (min-width: 800px) {
@@ -73,6 +81,10 @@
 
   .contact-info {
     display: flex;
+  }
+
+  .section-container {
+    padding: 6vw;
   }
 }
 
@@ -91,5 +103,9 @@
 
   .contact-block {
     width: 100vw
+  }
+
+  .section-container {
+    padding: 10vw;
   }
 }

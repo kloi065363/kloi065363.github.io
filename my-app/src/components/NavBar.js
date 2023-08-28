@@ -22,7 +22,7 @@ function NavBar () {
 
   return <>
     <Box component="nav">
-      <AppBar position="fixed" elevation={0} color="transparent" background-color="transparent">
+      <AppBar position="fixed" elevation={0} color="default">
         <Toolbar>
           <div class="nav-bar nav-big">
             <Typography variant="h6" color="white">

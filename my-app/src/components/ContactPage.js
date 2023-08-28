@@ -73,8 +73,8 @@ function ContactPage () {
           </List>
         </div>
       </div>
-      <div classname='contact-footer'>
-        <img src={dino} className='contact-footer-image' alt=''/>
+      <div classname='footer'>
+        <img src={dino} className='footer-image' alt=''/>
       </div>
     </>
   )
