@@ -10,8 +10,14 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MailOutlineRoundedIcon from '@mui/icons-material/MailOutlineRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LanguageIcon from '@mui/icons-material/Language';
+import {
+  useNavigate,
+} from 'react-router-dom';
 
 function ContactPage () {
+  const navigate = useNavigate();
+  
   return (
     <>
       <div className='contact-banner'>
@@ -56,6 +62,12 @@ function ContactPage () {
                   <GitHubIcon fontSize='large'/>
                 </ListItemIcon>
                 <ListItemText primary="Github" />
+              </ListItemButton>
+              <ListItemButton onClick={() => { navigate('/projects'); }}>
+                <ListItemIcon>
+                  <LanguageIcon fontSize='large'/>
+                </ListItemIcon>
+                <ListItemText primary="Projects" />
               </ListItemButton>
             </ListItem>
           </List>
