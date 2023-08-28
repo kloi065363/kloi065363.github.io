@@ -29,8 +29,7 @@ function AboutPage () {
           working on personal projects, starting with this website, exploring my interests as well as applying content that I have learned throughout my university career
           in different contexts. 
         </div>
-      </div>
-      <div className='section-container'>
+        <br/><br/><br/>
         <Typography className='section-header' variant='h5'>
           My Work Experience
         </Typography>

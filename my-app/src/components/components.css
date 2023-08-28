@@ -66,10 +66,6 @@
   width: 100vw;
 }
 
-.section-container:nth-child(even) {
-  background-color: #342B45;
-}
-
 @media screen and (min-width: 800px) {
   .nav-small {
     display: none;
