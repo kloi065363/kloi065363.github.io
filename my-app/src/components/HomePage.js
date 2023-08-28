@@ -1,9 +1,15 @@
 import React from 'react';
+import './components.css';
+import dino from './images/dino.png';
 
 function HomePage () {
 
   return (
-    <>This is the home page</>
+    <>
+      <div classname='footer'>
+        <img src={dino} className='footer-image' alt=''/>
+      </div>
+    </>
   )
 }
 
