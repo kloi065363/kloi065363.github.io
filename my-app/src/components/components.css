@@ -9,7 +9,7 @@
   color: #d1c4e9;
 }
 
-.contact-banner, .about-banner {
+.contact-banner, .about-banner, .home-banner{
   display:flex;
   width: 100vw;
   height: 30vh;
@@ -17,7 +17,7 @@
   justify-content: space-around;
 }
 
-.contact-banner-image, .about-banner-image {
+.contact-banner-image, .about-banner-image, .home-banner-image {
   width: 100vw;
   height: 30vh;
   object-fit: cover;
@@ -25,7 +25,7 @@
   z-index: 1;
 }
 
-.contact-banner-text, .about-banner-text {
+.contact-banner-text, .about-banner-text, .home-banner-text {
   z-index: 2;
   position: absolute;
   font-size: x-large;
